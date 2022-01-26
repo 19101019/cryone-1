@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 import { Carousel } from 'react-responsive-carousel';
 
 class Slider extends Component {
@@ -25,7 +25,7 @@ class Slider extends Component {
               </div>
               <img
                 className='h-4/6'
-                src='https://cdn.dribbble.com/userupload/1939488/file/original-915fb0c4bf914eb8e4f0f457f30cf763.jpg?compress=1&resize=800x600&vertical=top'
+                src=""
               />
             </div>
             <div className='h-full relative'>

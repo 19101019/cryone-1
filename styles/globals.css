@@ -12,15 +12,37 @@
   }
 }
 
-body{
+/* body{
   background-color: #111827;
-}
+} */
 
 /* Glassmorphism card effect */
-.card {
+/* .card {
     backdrop-filter: blur(25px) saturate(200%);
     -webkit-backdrop-filter: blur(25px) saturate(200%);
     background-color: rgba(172, 183, 206, 0.14);
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.125);
+} */
+
+
+/* Background styles */
+.card_container {
+  background-color: #111927;
+  background-image: 
+      radial-gradient(at 47% 33%, hsl(220.75, 77%, 40%) 0, transparent 59%), 
+      radial-gradient(at 82% 65%, hsl(218.00, 39%, 11%) 0, transparent 55%);
 }
+
+/* Glassmorphism card effect */
+.card{
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+
+
+
