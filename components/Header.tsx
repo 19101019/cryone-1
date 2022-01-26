@@ -35,8 +35,10 @@ const Header = () => {
     }
   };
   return (
-    <>
-      <header className='bg-gray-200 dark:bg-gray-900 border-b border-gray-100 dark:border-gray-700 fixed top-0 left-0 right-0 z-20'>
+       <>
+{/* bg-gray-200 dark:bg-gray-900 border-b border-gray-100 dark:border-gray-700 */}
+
+      <header className='card fixed top-0 left-0 right-0 z-20'>
         <div className='mx-auto px-4 sm:px-6 py-4 flex justify-between items-center'>
           <Image
             width='50'
@@ -68,7 +70,7 @@ const Header = () => {
         <SideNav />
       </nav>
       <main className='border-lime-300  ml-32 absolute right-0 left-0 top-20 '>
-        <div className=' overflow-hidden'>
+        <div className='overflow-hidden'>
           <Slider />
         </div>
         <section className='m-16 -mt-64'>
@@ -85,7 +87,7 @@ const Header = () => {
             </button>
             <button className='  border-2 border-solid border-blue-500 p-12 '>
               <div className='bg-white rounded w-8'>
-                <img className='w-8' src='./filter.png' />
+                <img className='w-8' src='./filter.png' alt="image" />
               </div>
               Button 1
             </button>
@@ -121,14 +123,33 @@ const Header = () => {
             </button>
           </div>
         </section>
-        {/* <section className='cards'>
-          <div className='card p-16'>Card1</div>
-          <div className='card p-16'>Card2</div>
-          <div className='card p-16'>Card3</div>
-        </section> */}
-      </main>
+
+
+         {/* *****card first ********** */}
+  
+
+<div className="flex card">
+  <div className="rounded-lg shadow-lg max-w-sm card">
+    <a href="#!">
+      <img className="rounded-t-lg" src="https://sportshub.cbsistatic.com/i/2021/04/10/6d5f7384-8fc8-42ea-bfda-b6e9a0b6cdc2/tony-stark-mcu-1261352.jpg" alt="ironman"/>
+    </a>
+    <div className="p-6">
+      <h5 className="text-white-900 text-xl font-medium mb-2">Card title</h5>
+      <p className="text-white-700 text-base mb-4">
+      So, fans have had their eyes peeled for Tony's return to the MCU and they got their wish in Marvel Studio's first animated series on Disney+ What If…?. But it's been a bit of a Monkey's Paw as the show has killed Tony Stark four times in the first seven episodes of the show.
+      </p>
+      <button type="button" className=" inline-block px-6 py-2.5 bg-red-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Button</button>
+    </div>
+  </div>
+</div>
+
+         </main>
+         
+   
+
     </>
-  );
+  )
+  
 };
 
 export default Header;
